@@ -1,2 +1,11 @@
-# bitcoin_price_analysis
-My first bitcoin price analysis program
+ДЛЯ ПРОВЕРКИ РАБОТЫ
+=========================================================================================
+Создание Docker-образа "my_python_app":
+docker build -t my_python_app [путь_к_файлу]
+-----------------------------------------------------------------------------------------
+Запуск Docker-контейнера "my_postgres":
+docker run -d --name my_postgres -e POSTGRES_PASSWORD=mega55555 -p 5432:5432 postgres
+-----------------------------------------------------------------------------------------
+Запуск Docker-контейнера "my_python_app":
+docker run -it --name my_python_app --link my_postgres -p 8000:8000 my_python_app
+-----------------------------------------------------------------------------------------
